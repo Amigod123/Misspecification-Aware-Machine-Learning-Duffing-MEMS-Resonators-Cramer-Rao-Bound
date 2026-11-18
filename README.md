@@ -1,6 +1,6 @@
 # Misspecification-Aware Machine Learning for Parameter Estimation in Duffing MEMS Resonators, Benchmarked Against the Cramér–Rao Bound
 
-MLEE course project (BITS Pilani, EEE). A controlled, reproducible simulation benchmark that asks **when** exact-model
+A controlled, reproducible simulation benchmark that asks **when** exact-model
 fitting and machine learning approach the Cramér–Rao bound (CRB) for estimating a MEMS resonator's quality factor Q,
 Duffing nonlinearity N and resonance shift (ppm) from up/down frequency sweeps — and what happens when the model is wrong.
 
@@ -41,17 +41,6 @@ oracle-start diagnostic); gradient boosting and ridge on 47 handcrafted features
 and a leave-one-world-out ML classifier act as mismatch detectors, with split-conformal 90 % intervals and abstention.
 Five seeds × 300 samples per condition, bootstrap / Wilson 95 % intervals.
 
-## Interpreting the results
-
-Read `results/default/tables/*.csv` (or Annex C of the report):
-`accuracy.csv` (errors and failure rates), `crb_efficiency.csv` (error / CRB std; ~1 = efficient),
-`optimizer_diagnostics.csv` (how often a fit ends at a worse cost than the oracle-start fit, i.e. an optimiser failure),
-`error_budget.csv` (noise vs quantisation vs estimator floor), `up_vs_updown.csv`, `detectors.csv`,
-`abstention_conformal.csv` (coverage and silent-failure rates), `learning_curve.csv`, `runtime.csv`.
-
-## Repository map
-
-See `docs/PLAN.md` (layout, tasks, acceptance criteria), `docs/literature_verification.md` (how each reference was checked).
 
 ## Credits
 
