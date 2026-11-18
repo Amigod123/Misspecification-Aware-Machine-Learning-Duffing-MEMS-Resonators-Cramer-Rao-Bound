@@ -4,8 +4,7 @@ A controlled, reproducible simulation benchmark that asks **when** exact-model
 fitting and machine learning approach the Cramér–Rao bound (CRB) for estimating a MEMS resonator's quality factor Q,
 Duffing nonlinearity N and resonance shift (ppm) from up/down frequency sweeps — and what happens when the model is wrong.
 
-> Everything here is **synthetic** (first-harmonic Duffing model, hardening only, single drive level, toy mismatch
-> worlds, regular-part CRB). Nothing is claimed about real devices.
+> Everything here is **synthetic**. Nothing is claimed about real devices.
 
 ## Quick start
 
