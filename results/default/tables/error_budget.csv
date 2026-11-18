@@ -1,0 +1,17 @@
+setting,method,n,Q_med_pct,Q_med_lo,Q_med_hi,fail_rate
+"noise-free, no ADC",halfpower,500,0.4236,0.3456,0.5228,0.142
+"noise-free, no ADC",ls_robust,500,0.0,0.0,0.0,0.0
+"noise-free, no ADC",ls_oracle,500,0.0,0.0,0.0,0.0
+"noise-free, no ADC",hgb,500,0.3967,0.3571,0.4497,0.0
+ADC only,halfpower,500,0.4247,0.3588,0.5262,0.142
+ADC only,ls_robust,500,0.0066,0.0056,0.0074,0.0
+ADC only,ls_oracle,500,0.0055,0.005,0.0061,0.0
+ADC only,hgb,500,0.3983,0.3581,0.442,0.0
+noise only,halfpower,500,2.8335,2.4846,3.2059,0.102
+noise only,ls_robust,500,0.3225,0.2826,0.3704,0.0
+noise only,ls_oracle,500,0.2783,0.2479,0.301,0.0
+noise only,hgb,500,0.9607,0.8662,1.0805,0.0
+noise + ADC,halfpower,500,2.8163,2.482,3.2094,0.1
+noise + ADC,ls_robust,500,0.324,0.2805,0.3676,0.0
+noise + ADC,ls_oracle,500,0.2809,0.2488,0.3013,0.0
+noise + ADC,hgb,500,0.9358,0.8578,1.068,0.0

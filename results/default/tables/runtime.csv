@@ -1,0 +1,8 @@
+method,ms_per_estimate_median,ms_p90,note
+ls,86.3645,159.4005,one CPU core per fit
+ls_robust,186.9926,340.1093,one CPU core per fit
+ls_oracle,19.1219,40.3705,one CPU core per fit
+ls_up,83.9086,166.3459,one CPU core per fit
+ls_bg,254.6763,441.1346,one CPU core per fit
+hgb (features + 3 models),0.0873,,"batch of test samples, per-sample average"
+"hgb training (3 targets, 6000 samples)",3322.7351,,

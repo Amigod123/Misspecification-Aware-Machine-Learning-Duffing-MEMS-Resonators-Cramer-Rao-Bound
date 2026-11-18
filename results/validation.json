@@ -1,0 +1,186 @@
+{
+ "checks": [
+  {
+   "check": "Linear limit FWHM*Q, Q=500",
+   "value": 1.0,
+   "expected": 1.0,
+   "tolerance": "0.5 %",
+   "passed": true,
+   "note": ""
+  },
+  {
+   "check": "Linear limit peak amplitude, Q=500",
+   "value": 1.0,
+   "expected": 1.0,
+   "tolerance": "0.5 %",
+   "passed": true,
+   "note": ""
+  },
+  {
+   "check": "Linear limit FWHM*Q, Q=3000",
+   "value": 0.99995,
+   "expected": 1.0,
+   "tolerance": "0.5 %",
+   "passed": true,
+   "note": ""
+  },
+  {
+   "check": "Linear limit peak amplitude, Q=3000",
+   "value": 1.0,
+   "expected": 1.0,
+   "tolerance": "0.5 %",
+   "passed": true,
+   "note": ""
+  },
+  {
+   "check": "Linear limit FWHM*Q, Q=15000",
+   "value": 0.99995,
+   "expected": 1.0,
+   "tolerance": "0.5 %",
+   "passed": true,
+   "note": ""
+  },
+  {
+   "check": "Linear limit peak amplitude, Q=15000",
+   "value": 1.0,
+   "expected": 1.0,
+   "tolerance": "0.5 %",
+   "passed": true,
+   "note": ""
+  },
+  {
+   "check": "Peak shift / HWHM, N=0.1",
+   "value": 0.0998,
+   "expected": 0.1,
+   "tolerance": "2 % (first-order theory)",
+   "passed": true,
+   "note": ""
+  },
+  {
+   "check": "Peak shift / HWHM, N=0.3",
+   "value": 0.2997,
+   "expected": 0.3,
+   "tolerance": "2 % (first-order theory)",
+   "passed": true,
+   "note": ""
+  },
+  {
+   "check": "Peak shift / HWHM, N=0.6",
+   "value": 0.5995,
+   "expected": 0.6,
+   "tolerance": "2 % (first-order theory)",
+   "passed": true,
+   "note": ""
+  },
+  {
+   "check": "Hysteresis onset N_c (numerical, |up-down|>1e-3)",
+   "value": 1.5454,
+   "expected": 1.5396,
+   "tolerance": "1 %",
+   "passed": true,
+   "note": ""
+  },
+  {
+   "check": "Up/down identical below onset, N=1.4",
+   "value": "0.00e+00",
+   "expected": 0.0,
+   "tolerance": "< 1e-6",
+   "passed": true,
+   "note": ""
+  },
+  {
+   "check": "Hysteresis present, N=3",
+   "value": 0.648,
+   "expected": "> 0.1",
+   "tolerance": "-",
+   "passed": true,
+   "note": ""
+  },
+  {
+   "check": "ODE vs harmonic balance, x=0 HWHM, up-branch (%)",
+   "value": 0.015,
+   "expected": 0.0,
+   "tolerance": "|err| < 0.2 %",
+   "passed": true,
+   "note": "HB=0.7071 ODE=0.7072"
+  },
+  {
+   "check": "ODE vs harmonic balance, x=0 HWHM, down-branch (%)",
+   "value": 0.015,
+   "expected": 0.0,
+   "tolerance": "|err| < 0.2 %",
+   "passed": true,
+   "note": "HB=0.7071 ODE=0.7072"
+  },
+  {
+   "check": "ODE vs harmonic balance, x=1 HWHM, up-branch (%)",
+   "value": 0.023,
+   "expected": 0.0,
+   "tolerance": "|err| < 0.2 %",
+   "passed": true,
+   "note": "HB=0.8780 ODE=0.8782"
+  },
+  {
+   "check": "ODE vs harmonic balance, x=1 HWHM, down-branch (%)",
+   "value": 0.023,
+   "expected": 0.0,
+   "tolerance": "|err| < 0.2 %",
+   "passed": true,
+   "note": "HB=0.8780 ODE=0.8782"
+  },
+  {
+   "check": "ODE vs harmonic balance, x=2 HWHM, up-branch (%)",
+   "value": 0.046,
+   "expected": 0.0,
+   "tolerance": "|err| < 0.2 %",
+   "passed": true,
+   "note": "HB=0.9947 ODE=0.9951"
+  },
+  {
+   "check": "ODE vs harmonic balance, x=2 HWHM, down-branch (%)",
+   "value": 0.029,
+   "expected": 0.0,
+   "tolerance": "|err| < 0.2 %",
+   "passed": true,
+   "note": "HB=0.6602 ODE=0.6604"
+  },
+  {
+   "check": "ODE vs harmonic balance, x=3 HWHM, up-branch (%)",
+   "value": 0.005,
+   "expected": 0.0,
+   "tolerance": "|err| < 0.2 %",
+   "passed": true,
+   "note": "HB=0.3379 ODE=0.3379"
+  },
+  {
+   "check": "ODE vs harmonic balance, x=3 HWHM, down-branch (%)",
+   "value": 0.005,
+   "expected": 0.0,
+   "tolerance": "|err| < 0.2 %",
+   "passed": true,
+   "note": "HB=0.3379 ODE=0.3379"
+  },
+  {
+   "check": "Generate 2000 samples (s)",
+   "value": 0.6,
+   "expected": "< 1 s",
+   "tolerance": "-",
+   "passed": true,
+   "note": ""
+  }
+ ],
+ "all_passed": true,
+ "ode_err_range_pct": [
+  0.005094799915203557,
+  0.04553404610492872
+ ],
+ "versions": {
+  "python": "3.13.16",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "scikit-learn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39"
+ },
+ "date": "2026-11-18 11:58:44"
+}

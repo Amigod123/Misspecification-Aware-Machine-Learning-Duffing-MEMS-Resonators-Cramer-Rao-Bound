@@ -1,0 +1,4 @@
+condition,crb_ratio_Q,crb_ratio_N,crb_ratio_shift,ls_Q_med_pct,ls_N_mae,ls_fail,ls_up_Q_med_pct,ls_up_N_mae,ls_up_fail,ls_robust_Q_med_pct,ls_robust_N_mae,ls_robust_fail,ls_up_robust_Q_med_pct,ls_up_robust_N_mae,ls_up_robust_fail,hgb_Q_med_pct,hgb_N_mae,hgb_fail,hgb_up_Q_med_pct,hgb_up_N_mae,hgb_up_fail
+nominal,1.4142,1.4142,1.4142,0.3309,0.0363,0.0047,0.482,0.0621,0.0033,0.319,0.0265,0.0,0.4922,0.0541,0.0027,0.8953,0.0516,0.0,1.2176,0.0727,0.0
+nom_N08,1.4142,1.4142,1.4142,0.3702,0.041,0.0053,0.523,0.0734,0.0047,0.3596,0.0335,0.0,0.5373,0.0652,0.002,0.9053,0.0534,0.0,1.1987,0.0776,0.0007
+N_extrap,1.1358,1.1091,1.6331,8.2352,0.3342,0.386,3.8331,0.4092,0.204,2.3095,0.2532,0.0667,3.6314,0.3421,0.172,5.1896,0.7951,0.1387,5.945,0.782,0.2407

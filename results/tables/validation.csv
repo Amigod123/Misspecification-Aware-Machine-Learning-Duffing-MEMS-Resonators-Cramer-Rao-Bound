@@ -1,0 +1,22 @@
+check,value,expected,tolerance,passed,note
+"Linear limit FWHM*Q, Q=500",1.0,1.0,0.5 %,True,
+"Linear limit peak amplitude, Q=500",1.0,1.0,0.5 %,True,
+"Linear limit FWHM*Q, Q=3000",0.99995,1.0,0.5 %,True,
+"Linear limit peak amplitude, Q=3000",1.0,1.0,0.5 %,True,
+"Linear limit FWHM*Q, Q=15000",0.99995,1.0,0.5 %,True,
+"Linear limit peak amplitude, Q=15000",1.0,1.0,0.5 %,True,
+"Peak shift / HWHM, N=0.1",0.0998,0.1,2 % (first-order theory),True,
+"Peak shift / HWHM, N=0.3",0.2997,0.3,2 % (first-order theory),True,
+"Peak shift / HWHM, N=0.6",0.5995,0.6,2 % (first-order theory),True,
+"Hysteresis onset N_c (numerical, |up-down|>1e-3)",1.5454,1.5396,1 %,True,
+"Up/down identical below onset, N=1.4",0.00e+00,0.0,< 1e-6,True,
+"Hysteresis present, N=3",0.648,> 0.1,-,True,
+"ODE vs harmonic balance, x=0 HWHM, up-branch (%)",0.015,0.0,|err| < 0.2 %,True,HB=0.7071 ODE=0.7072
+"ODE vs harmonic balance, x=0 HWHM, down-branch (%)",0.015,0.0,|err| < 0.2 %,True,HB=0.7071 ODE=0.7072
+"ODE vs harmonic balance, x=1 HWHM, up-branch (%)",0.023,0.0,|err| < 0.2 %,True,HB=0.8780 ODE=0.8782
+"ODE vs harmonic balance, x=1 HWHM, down-branch (%)",0.023,0.0,|err| < 0.2 %,True,HB=0.8780 ODE=0.8782
+"ODE vs harmonic balance, x=2 HWHM, up-branch (%)",0.046,0.0,|err| < 0.2 %,True,HB=0.9947 ODE=0.9951
+"ODE vs harmonic balance, x=2 HWHM, down-branch (%)",0.029,0.0,|err| < 0.2 %,True,HB=0.6602 ODE=0.6604
+"ODE vs harmonic balance, x=3 HWHM, up-branch (%)",0.005,0.0,|err| < 0.2 %,True,HB=0.3379 ODE=0.3379
+"ODE vs harmonic balance, x=3 HWHM, down-branch (%)",0.005,0.0,|err| < 0.2 %,True,HB=0.3379 ODE=0.3379
+Generate 2000 samples (s),0.6,< 1 s,-,True,

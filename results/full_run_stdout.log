@@ -1,0 +1,31 @@
+[      6s] seed 0: ML trained (3.1s), qhat=0.0224
+[      7s] seed 0: 9900 least-squares fits
+[    745s] seed 0: least squares done in 739s
+[    754s] seed 0: CRB done
+[    772s] seed 0: detectors + learning curve done
+[    810s] seed 0: error budget done; seed total 810s
+[    816s] seed 1: ML trained (3.3s), qhat=0.0246
+[    817s] seed 1: 9900 least-squares fits
+[   1506s] seed 1: least squares done in 689s
+[   1514s] seed 1: CRB done
+[   1532s] seed 1: detectors + learning curve done
+[   1567s] seed 1: error budget done; seed total 757s
+[   1573s] seed 2: ML trained (3.4s), qhat=0.0240
+[   1574s] seed 2: 9900 least-squares fits
+[   2214s] seed 2: least squares done in 640s
+[   2222s] seed 2: CRB done
+[   2239s] seed 2: detectors + learning curve done
+[   2274s] seed 2: error budget done; seed total 707s
+[   2280s] seed 3: ML trained (3.5s), qhat=0.0253
+[   2281s] seed 3: 9900 least-squares fits
+[   2928s] seed 3: least squares done in 647s
+[   2937s] seed 3: CRB done
+[   2955s] seed 3: detectors + learning curve done
+[   2992s] seed 3: error budget done; seed total 718s
+[   2999s] seed 4: ML trained (3.2s), qhat=0.0254
+[   2999s] seed 4: 9900 least-squares fits
+[   3669s] seed 4: least squares done in 670s
+[   3679s] seed 4: CRB done
+[   3698s] seed 4: detectors + learning curve done
+[   3736s] seed 4: error budget done; seed total 743s
+[   3736s] ALL SEEDS DONE

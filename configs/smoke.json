@@ -1,0 +1,206 @@
+{
+  "name": "smoke",
+  "description": "Tiny configuration for a fast end-to-end smoke test (results not meaningful).",
+  "seeds": [
+    0
+  ],
+  "n_points": 201,
+  "ranges": {
+    "train": {
+      "Q": [
+        800,
+        8000
+      ],
+      "N": [
+        0.2,
+        2.5
+      ]
+    },
+    "q_extrap": {
+      "Q": [
+        8000,
+        20000
+      ],
+      "N": [
+        0.2,
+        2.5
+      ]
+    },
+    "n_extrap": {
+      "Q": [
+        800,
+        8000
+      ],
+      "N": [
+        2.5,
+        4.0
+      ]
+    },
+    "mismatch": {
+      "Q": [
+        800,
+        8000
+      ],
+      "N": [
+        0.8,
+        2.5
+      ]
+    }
+  },
+  "shift_ppm": 100.0,
+  "noise_range": [
+    0.005,
+    0.02
+  ],
+  "noise_world_sigma": 0.03,
+  "gain_sigma": 0.05,
+  "adc_bits": 12,
+  "adc_fullscale": 2.0,
+  "window": {
+    "x_lo": -6.0,
+    "x_hi": 12.0,
+    "rho": [
+      0.8,
+      1.25
+    ],
+    "margin_ppm": 120.0
+  },
+  "worlds": {
+    "quintic_kappa": [
+      0.3,
+      0.8
+    ],
+    "damping_eta": [
+      0.2,
+      1.0
+    ],
+    "feed_mag": [
+      0.05,
+      0.25
+    ]
+  },
+  "sizes": {
+    "train": 600,
+    "calib": 200,
+    "test": 30,
+    "det_train": 150,
+    "abstain_calib": 40,
+    "error_budget": 10
+  },
+  "test_conditions": {
+    "nominal": {
+      "ranges": "train",
+      "world": "nominal"
+    },
+    "Q_extrap": {
+      "ranges": "q_extrap",
+      "world": "nominal"
+    },
+    "N_extrap": {
+      "ranges": "n_extrap",
+      "world": "nominal"
+    },
+    "nom_N08": {
+      "ranges": "mismatch",
+      "world": "nominal"
+    },
+    "noise3": {
+      "ranges": "mismatch",
+      "world": "noise3"
+    },
+    "feedthrough": {
+      "ranges": "mismatch",
+      "world": "feed"
+    },
+    "quintic": {
+      "ranges": "mismatch",
+      "world": "quintic"
+    },
+    "damping": {
+      "ranges": "mismatch",
+      "world": "damp"
+    }
+  },
+  "ls": {
+    "starts": [
+      0.5,
+      1.8,
+      3.0
+    ],
+    "max_nfev": 60,
+    "diff_step": 0.0001,
+    "logQ_bounds": [
+      5.298317366548036,
+      11.512925464970229
+    ],
+    "N_bounds": [
+      0.0,
+      8.0
+    ],
+    "shift_bounds_ppm": [
+      -400.0,
+      400.0
+    ],
+    "logG_bounds": [
+      -0.6931471805599453,
+      0.6931471805599453
+    ],
+    "bg_bounds": [
+      -1.0,
+      1.0
+    ],
+    "optimizer_failure_rel_cost": 0.01,
+    "robust": {
+      "starts": [
+        0.5,
+        1.0,
+        1.8,
+        2.6,
+        3.4,
+        4.2
+      ],
+      "diff_step": 0.001,
+      "max_nfev": 200,
+      "prefit_mask": true,
+      "note": "Improved variant: 6 N-starts, hysteresis-masked pre-fit, larger finite-difference step, more evaluations."
+    }
+  },
+  "hgb": {
+    "max_iter": 400,
+    "learning_rate": 0.06,
+    "max_leaf_nodes": 24,
+    "l2_regularization": 1.0,
+    "random_state": 0
+  },
+  "ridge": {
+    "alpha": 1.0
+  },
+  "detector_hgb": {
+    "max_iter": 200,
+    "learning_rate": 0.08,
+    "random_state": 0
+  },
+  "conformal_alpha": 0.1,
+  "abstain_quantile": 0.95,
+  "fail_threshold": 0.1,
+  "learning_curve": [
+    150,
+    300,
+    600
+  ],
+  "crb": {
+    "jump_tol": 0.03
+  },
+  "bootstrap": {
+    "n": 200,
+    "seed": 12345
+  },
+  "n_workers": 2,
+  "crb_conditions": [
+    "nominal",
+    "nom_N08",
+    "Q_extrap",
+    "N_extrap",
+    "noise3"
+  ]
+}

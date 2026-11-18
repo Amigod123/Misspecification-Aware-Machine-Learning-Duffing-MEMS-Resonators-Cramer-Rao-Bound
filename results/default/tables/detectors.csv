@@ -1,0 +1,6 @@
+world,lof_auc_mean,lof_auc_sd,lof_auc_min,lof_auc_max,ml_auc_mean,ml_auc_sd,ml_auc_min,ml_auc_max,ml_trained_on
+feedthrough,0.9938,0.0018,0.9912,0.9953,0.6387,0.0381,0.5807,0.6814,quintic+damp
+quintic,0.9221,0.0147,0.9057,0.9375,0.4914,0.1057,0.3388,0.5936,feed+damp
+damping,0.841,0.011,0.8283,0.8518,0.4519,0.0268,0.4073,0.4778,feed+quintic
+noise3,0.5181,0.0276,0.496,0.55,0.8227,0.0602,0.73,0.8892,feed+quintic+damp
+feedthrough (fit includes background term),0.5064,,0.4808,0.5204,,,,,

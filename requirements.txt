@@ -1,0 +1,9 @@
+# Exact versions used to produce the reported results (Python 3.13.16, Linux, CPU only).
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+pillow==11.3.0
+pandas==2.3.3
+streamlit==1.40.0
+qrcode==8.2
